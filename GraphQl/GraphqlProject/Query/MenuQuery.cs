@@ -18,10 +18,6 @@ namespace GraphqlProject.Query
             {
                 return menuRepository.GetMenuById(context.GetArgument<int>("menuId"));
             });
-            Field<MenuType>("UpdateMenu").Arguments(new QueryArguments(new QueryArgument<IntGraphType> { Name = "menuId" }, new QueryArgument<MenuType> { Name = "menu" })).Resolve(context =>
-            {
-                return menuRepository.UpdateMenu(context.GetArgument<int>("menuId"), context.GetArgument<Menu>("menu"));
-            });
         }
     }
 }
