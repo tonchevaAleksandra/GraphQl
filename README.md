@@ -1,1 +1,1 @@
-# GraphQL ASP.NET CORE
+# GraphQL + ASP.NET CORE + .Net 8 + EF Core
